@@ -8,7 +8,6 @@ body {
 	display: flex;
 	background: #ffffff;
 	font-family: "Inter";
-	font-size: 14px;
 	font-weight: 400;
 }
 
@@ -32,4 +31,12 @@ select,
 input[type="datetime-local"],
 span.format-icons img {
 	cursor: pointer;
+}
+
+/* Mobile Phones */
+@media screen and (min-width: 280px) and (max-width: 480px) {
+	body {
+		width: 100vw;
+		overflow-x: hidden;
+	}
 }

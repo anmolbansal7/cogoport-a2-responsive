@@ -7,7 +7,6 @@
 	padding: 28px 16px 24px 16px;
 	border-right: 1px solid #eaecf0;
 	background-color: #fff;
-	z-index: 99;
 }
 
 .menu-top {
@@ -16,7 +15,7 @@
 	align-items: flex-start;
 	gap: 16px;
 	font-weight: 500;
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 24px;
 	color: #101828;
 	width: 100%;
@@ -41,7 +40,7 @@
 	border-radius: 6px;
 	text-decoration: none;
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 24px;
 	color: #344054;
 }
@@ -61,7 +60,7 @@ span.count {
 	border-radius: 16px;
 	margin-left: 50%;
 	font-weight: 500;
-	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 18px;
 	text-align: center;
 }
@@ -78,14 +77,14 @@ span.count {
 
 .menu-bottom span.name {
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 20px;
 	color: #101828;
 }
 
 .menu-bottom span.email {
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 20px;
 	color: #475467;
 }

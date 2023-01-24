@@ -63,14 +63,14 @@
 
 .details-left span.name {
 	font-weight: 600;
-	font-size: 30px;
+	font-size: 1.875rem;
 	line-height: 38px;
 	color: #101828;
 }
 
 .details-left span.email {
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 24px;
 	color: #475467;
 }
@@ -92,14 +92,14 @@
 
 p.title {
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 20px;
 	color: #344054;
 }
 
 p.sub-title {
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 20px;
 	color: #475467;
 }
@@ -177,11 +177,11 @@ label.upload {
 	gap: 12px;
 	padding: 16px 24px;
 	width: 86%;
-	height: 126px;
+	height: auto;
 	border: 1px solid #d0d5dd;
 	border-radius: 12px;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 20px;
 	color: #475467;
 	cursor: pointer;
@@ -196,13 +196,13 @@ label.upload:hover {
 }
 .upload-purple {
 	font-weight: 600;
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 20px;
 	color: #6941c6;
 }
 .upload-small {
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 18px;
 	color: #475467;
 }
@@ -224,14 +224,14 @@ label.upload:hover {
 
 .toggle-label {
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 20px;
 	color: #344054;
 }
 
 .toggle-desc {
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 20px;
 	color: #475467;
 }
@@ -255,7 +255,7 @@ span.input-label {
 	border: 1px solid #d0d5dd;
 	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 24px;
 	color: #475467;
 }
@@ -268,7 +268,7 @@ input.special {
 
 span.char-count {
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 20px;
 	color: #475467;
 }
@@ -293,4 +293,71 @@ div.timezone {
 div.country select,
 div.timezone select {
 	width: 100% !important;
+}
+
+/* Mobile Phones */
+@media screen and (min-width: 280px) and (max-width: 480px) {
+	.main {
+		width: 100vw;
+	}
+
+	img.banner {
+		width: 100vw;
+	}
+
+	.details {
+		flex-direction: column;
+		padding: 0px 16px;
+	}
+	.details-left {
+		flex-direction: column;
+	}
+	.details-left span.name {
+		font-size: 1.5rem;
+	}
+	.personal-info {
+		margin-top: 35%;
+		padding: 0px 16px;
+		flex-direction: column;
+	}
+	.avatar {
+		width: 120px;
+		height: 120px;
+	}
+	.avatar-container {
+		margin-top: -35%;
+	}
+	span.tick {
+		top: 90px;
+		left: 90px;
+	}
+	span.tick img {
+		width: 24px;
+		height: 24px;
+	}
+	.card {
+		width: 100% !important;
+		margin-top: 5%;
+	}
+	.input-name {
+		flex-direction: column;
+		gap: 24px;
+	}
+	div.input {
+		width: 100%;
+	}
+	label.upload {
+		width: 100%;
+	}
+	hr {
+		display: none;
+	}
+	.profile-info {
+		padding: 0px 16px;
+		flex-direction: column;
+	}
+	div.format {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
