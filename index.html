@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Settings - Olivia Rhye</title>
+		<!-- Common Styling -->
+		<link href="./css/style.css" type="text/css" rel="stylesheet" />
+		<!-- Sidebar and Navbar -->
+		<link href="./css/sidebar.css" type="text/css" rel="stylesheet" />
+		<!-- Menu Layout and Components -->
+		<link href="./css/menu.css" type="text/css" rel="stylesheet" />
+		<!-- Main Layout -->
+		<link href="./css/main.css" type="text/css" rel="stylesheet" />
+		<!-- Form Components -->
+		<link href="./css/form.css" type="text/css" rel="stylesheet" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="sidebar">
+			<div
+				class="nav"
+				id="nav"
+				onmouseover="showHoverMenu()"
+				onmouseleave="closeHoverMenu()"
+			>
+				<div class="nav-top">
+					<a href="" class="logo"><img src="./assets/logo.svg" /></a>
+					<a href=""><img src="./assets/icons/1.svg" /></a>
+					<a href=""><img src="./assets/icons/2.svg" /></a>
+					<a href=""><img src="./assets/icons/3.svg" /></a>
+					<a href=""><img src="./assets/icons/4.svg" /></a>
+					<a href=""><img src="./assets/icons/5.svg" /></a>
+					<a href=""><img src="./assets/icons/6.svg" /></a>
+				</div>
+				<div class="nav-bottom">
+					<a href=""><img src="./assets/icons/7.svg" /></a>
+					<a href="" class="active"
+						><img src="./assets/icons/settings.svg"
+					/></a>
+					<span class="profile-pic"></span>
+				</div>
+			</div>
+
+			<div
+				class="menu"
+				id="menu"
+				onmouseover="showHoverMenu()"
+				onmouseleave="closeHoverMenu()"
+			>
+				<div class="menu-top">
+					Settings
+					<div class="links">
+						<a href="">
+							<img src="./assets/icons/details.svg" />
+							My details
+						</a>
+						<a href="" class="active">
+							<img src="./assets/icons/profile.svg" />
+							Profile
+							<span class="count">10</span>
+						</a>
+						<a href="">
+							<img src="./assets/icons/password.svg" />
+							Password
+						</a>
+						<a href="">
+							<img src="./assets/icons/team.svg" />
+							Team
+						</a>
+						<a href="">
+							<img src="./assets/icons/billing.svg" />
+							Billing
+						</a>
+						<a href="">
+							<img src="./assets/icons/notifications.svg" />
+							Notifications
+						</a>
+						<a href="">
+							<img src="./assets/icons/integrations.svg" />
+							Integrations
+						</a>
+					</div>
+				</div>
+				<div class="menu-bottom">
+					<span>
+						<span class="name">Olivia Rhye</span>
+						<span class="email">olivia@untitledui.com</span>
+					</span>
+					<span class="logout">
+						<img src="./assets/icons/go.svg" />
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="main" id="main">
+			<div class="header">
+				<img class="banner" src="./assets/banner.png" />
+				<div class="details">
+					<div class="details-left">
+						<span class="avatar-container">
+							<span class="avatar"> </span>
+							<span class="tick">
+								<img src="./assets/icons/tick.svg" />
+							</span>
+						</span>
+						<span class="info">
+							<span class="name"> Olivia Rhye </span>
+							<br />
+							<span class="email"> olivia@untitledui.com </span>
+						</span>
+					</div>
+
+					<span class="buttons">
+						<button class="hollow-btn">
+							<img src="./assets/icons/share.svg" />
+							Share
+						</button>
+						<button class="full-btn">View Profile</button>
+					</span>
+				</div>
+			</div>
+			<div class="form"></div>
+			<div class="personal-info">
+				<span class="title">
+					<p class="title">Personal info</p>
+					<p class="sub-title">
+						Update your photo and personal details.
+					</p>
+				</span>
+				<div class="card">
+					<div class="card-top">
+						<div class="input-name">
+							<div class="input">
+								<label>First name</label>
+								<input type="text" value="Olivia" />
+							</div>
+							<div class="input">
+								<label>Last name</label>
+								<input type="text" value="Rhye" />
+							</div>
+						</div>
+						<div class="input email">
+							<label>Email address</label>
+							<input type="email" value="olivia@untitledui.com" />
+						</div>
+						<div class="input-name">
+							<span class="profile-pic-form"></span>
+							<input type="file" id="upload-btn" hidden/>
+							<label for="upload-btn" class="upload">
+								<img src="./assets/icons/upload.svg" />
+								<span>
+									<span class="upload-purple"
+										>Click to upload
+									</span>
+									or drag and drop
+								</span>
+								<span class="upload-small">
+									SVG, PNG, JPG or GIF (max. 800x400px)</span
+								>
+                            </label>
+						</div>
+					</div>
+					<div class="card-btn">
+						<button class="hollow-btn">Cancel</button>
+						<button class="full-btn">Save Changes</button>
+					</div>
+				</div>
+			</div>
+			<hr class="line" />
+			<div class="profile-info">
+				<span class="title">
+					<p class="title">Profile</p>
+					<p class="sub-title">Update your portfolio and bio.</p>
+				</span>
+				<div class="card">
+					<div class="card-top">
+						<div class="toggle">
+							<label class="switch">
+								<input type="checkbox" checked />
+								<span class="slider round"></span>
+							</label>
+							<span>
+								<span class="toggle-label">
+									Available for projects
+									<br />
+								</span>
+								<span class="toggle-desc">
+									I’m open and available for freelance work.
+								</span>
+							</span>
+						</div>
+						<div class="input username">
+							<label>Username</label>
+							<div class="input-combined">
+								<span class="input-label">
+									untitled.ui.com/
+								</span>
+								<input
+									class="special"
+									type="text"
+									value="olivia"
+								/>
+							</div>
+						</div>
+						<div class="input username">
+							<label>Website</label>
+							<div class="input-combined">
+								<span class="input-label"> https:// </span>
+								<input
+									class="special"
+									type="text"
+									value="www.untitledui.com"
+								/>
+							</div>
+						</div>
+						<div class="input username">
+							<label>Description</label>
+							<textarea
+								id="description"
+								cols="30"
+								rows="4"
+								maxlength="400"
+							>
+I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development. </textarea
+							>
+							<span class="char-count" id="count"
+								>275 characters left</span
+							>
+						</div>
+
+						<div class="format">
+							<!-- Dropdown and Icons -->
+							<select class="text-type">
+								<option>Regular</option>
+								<option>Monospaced</option>
+							</select>
+							<span class="format-icons">
+								<img src="./assets/icons/bold.svg" />
+								<img src="./assets/icons/italics.svg" />
+								<img src="./assets/icons/attach.svg" />
+								<img src="./assets/icons/bullets.svg" />
+								<img src="./assets/icons/numbers.svg" />
+							</span>
+						</div>
+						<div class="input country">
+							<label>Country</label>
+							<!-- Country Dropdown with Flags -->
+							<select class="text-type country">
+								<option>Australia</option>
+								<option>India</option>
+								<option>USA</option>
+								<option>England</option>
+							</select>
+						</div>
+						<div class="input timezone">
+							<label>Timezone</label>
+							<!-- Timezone Dropdown with Clock -->
+							<input type="datetime-local" />
+						</div>
+					</div>
+					<div class="card-btn">
+						<button class="hollow-btn">Cancel</button>
+						<button class="full-btn">Save Changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./script.js"></script>
+</html>

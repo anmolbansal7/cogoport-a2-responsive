@@ -1,0 +1,93 @@
+.sidebar {
+	width: 25vw;
+	height: 100vh;
+	overflow: hidden;
+	position: fixed;
+	display: flex;
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 5.5vw;
+	border-right: 1px solid #eaecf0;
+	padding: 24px 0 24px 0;
+}
+
+.nav-top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+}
+
+.nav-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+}
+
+.nav-top a img,
+.nav-bottom a img {
+	padding: 12px;
+	vertical-align: middle;
+}
+
+.nav-top a.logo img {
+	padding-top: 0;
+}
+
+.nav-top a.active,
+.nav-bottom a.active {
+	background: #f9fafb;
+	border-radius: 6px;
+}
+
+.nav-top a.logo:hover {
+	background: none;
+}
+.nav-top a:hover,
+.nav-bottom a:hover {
+	background: #f9fafb;
+	border-radius: 6px;
+}
+
+span.profile-pic {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 48px;
+	height: 48px;
+	margin: 12px 0 0 0;
+	background: url(../assets/profile.png);
+	background-size: contain;
+	border-radius: 200px;
+}
+
+/* Small Screen Laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+/* Tablets/iPads */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.sidebar {
+		display: none;
+	}
+	div.main {
+		margin-left: 0;
+		width: 100vw;
+	}
+}
+/* Mobile Phones */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	.sidebar {
+		display: none;
+	}
+	div.main {
+		margin-left: 0;
+		width: 100vw;
+	}
+}
