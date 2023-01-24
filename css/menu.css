@@ -50,7 +50,7 @@
 	background: #f9fafb;
 }
 
-.menu-top .links a:hover{
+.menu-top .links a:hover {
 	background: #f9fafb;
 }
 
@@ -90,6 +90,6 @@ span.count {
 	color: #475467;
 }
 
-span.logout{
+span.logout {
 	cursor: pointer;
 }
